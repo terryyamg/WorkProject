@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>大陸省市县三级下拉是選單預設範例</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="select.js"></script>
+
+</head>
+<body onLoad="setup()">
+<form action="china_echo.php" name="frm" method="post" id="form">
+<!--選單1 -->
+<select id="s1" name="s1"><option>省份</option></select>
+<!--選單2 -->
+<select id="s2" name="s2"><option>地级市</option></select>
+<!--選單3 -->
+<select id="s3" name="s3"><option>市、县级市、县</option></select>
+<input name="1" type="submit" value="送出" onClick="subsure()">
+</form>
+<script>
+//	var area_ci = 福建; 
+//	var area_co = 南平; 
+//	var area_ar = 建瓯市; 
+$(document).ready(function(){
+	$("#form").click(function(){
+		$("#s1 option[value=福建]").attr("selected",true);
+		//select.js裡的方法
+		change(1);
+		$("#s2 option[value=南平]").attr("selected",true);
+		change(2);
+		$("#s3 option[value=建瓯市]").attr("selected",true);
+	});
+	//等待時間自動執行
+	setTimeout(function(){
+		$('#form').trigger('click')},0) 
+});
+
+</script>
+</body>
+</html>
