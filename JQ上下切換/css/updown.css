@@ -1,0 +1,49 @@
+@charset "utf-8";
+body {
+	margin-top: 0px;
+}
+
+#insect2, #insect3 { display:none; }
+		
+#wrapper {
+	width: 1024px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#wrapper #header {
+	float: left;
+	height: 285px;
+	width: 1024px;
+}
+#wrapper #main {
+	float: left;
+	height: 392px;
+	width: 1024px;
+}
+#wrapper #main #main_1 {
+	float: left;
+	height: 392px;
+	width: 93px;
+}
+
+#wrapper #main .content {
+	float: left;
+	height: 392px;
+	width: 839px;
+}
+
+#wrapper #main #main_3 {
+	float: left;
+	height: 392px;
+	width: 92px;
+}
+#wrapper #btn {
+	float: left;
+	height: 51px;
+	width: 1024px;
+}
+#wrapper #footer {
+	float: left;
+	height: 32px;
+	width: 1024px;
+}
